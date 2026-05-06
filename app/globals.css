@@ -5,12 +5,12 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,8 +19,103 @@
   }
 }
 
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  color:black;
   font-family: Arial, Helvetica, sans-serif;
+ 
 }
+
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 15%;
+ padding-top: 20px;
+ text-align:center;
+ background-color: black;
+ color: white;
+}
+.logo{
+  text-align: end;
+  align-items: center;
+  gap: 5px;
+  font-size: x-large;
+}
+
+
+.logbtn{
+  background:#171717;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+.getbtn{
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+}
+
+
+.navbtn{ 
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.hero{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:  0 auto;
+   height: 160vh;
+  /* background: linear-gradient(180deg, black 70%, rgb(35, 42, 84)15%, rgb(26, 61, 81)15%); */
+background:
+  /* Bottom Left Purple Glow */
+  radial-gradient(circle at bottom left, #232a54 0%, transparent 25%),
+  /* Bottom Right Teal Glow */
+  radial-gradient(circle at bottom right, #1a3d51 0%, transparent 25%),
+  /* Solid Black Background (Majority Top) */
+  #010006;
+  color: white;
+}
+.hero h1{
+  font-size: 68px;
+  text-align: center;
+}
+.hero p{
+  margin: 0 25%;
+  text-align: center;
+}
+.hero-btn{
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+.ctnbtn{
+ padding: 8px 12px;
+ border-radius: 20px;
+}
+.tab{
+ width: 60%;
+ height: 500px;
+ margin: auto;
+ margin-top: -190px;
+ border-radius: 15px;
+ border:1px solid rgba(255, 255, 255, 0.1)
+}
+.invo-icon{
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius:5px;
+}
+/* .icons{
+display: flex;
+justify-content: space-evenly;
+margin-top: 10px;
+
+
+} */
