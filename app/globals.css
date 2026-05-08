@@ -62,13 +62,15 @@ header{
   gap: 10px;
 }
 .hero{
-  padding-top: 5%;
+  padding-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:  0 auto;
-   height: 160vh;
+   height: 110vh;
   /* background: linear-gradient(180deg, black 70%, rgb(35, 42, 84)15%, rgb(26, 61, 81)15%); */
 background:
   /* Bottom Left Purple Glow */
@@ -97,25 +99,108 @@ background:
  border-radius: 20px;
 }
 .tab{
- width: 60%;
- height: 500px;
+ display: flex;
+ justify-content: center;
+ width: 70%;
+ height: auto;
  margin: auto;
  margin-top: -190px;
  border-radius: 15px;
- border:1px solid rgba(255, 255, 255, 0.1)
+ border:10px solid rgba(225,225,255,0.1);
+ padding: 20px;
+ margin-bottom: 20px;
 }
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
 .invo-icon{
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 80px;
   align-items: center;
   padding: 10px;
   border: 2px solid rgb(220, 220, 220);
-  border-radius:5px;
+  border-radius:10px
 }
-/* .icons{
+.invo-icon:nth-child(1){
+  margin-left: -50px;
+
+}
+.invo-icon:nth-child(2){
+  margin-left: -50px;
+}
+.invo-icon img{
+  margin: auto;
+}
+.bill{
+width: 26%;
+padding: 15px;
+
+}
+.amount{
 display: flex;
-justify-content: space-evenly;
-margin-top: 10px;
+justify-content: space-between;
+align-items: center;
+position:relative;
+padding: 15px;
+border-radius: 10px;
+border:2px solid rgb(220, 220, 220);
+line-height: normal;
+margin: auto;
+margin-top: 50px;
+margin-left: -150px;
+margin-right: 150px;
 
+}
 
-} */
+.amount p{
+  font-size: x-large;
+  font-weight: 500;
+  text-decoration: black;
+}
+.amount span{
+  font-size: small;
+  font-weight: 100;
+  text-decoration: gray;
+}
+.card-bill{
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 15px;
+  padding: 5px;
+  line-height: 2;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-left: -40px;
+}
+.card-bill h2{
+  margin-left: 5px;
+  font-weight: bold;
+}
+.card-bill span{
+  margin-left: 5px;
+  margin-bottom: 15px;
+  
+}
+.div-3{
+  margin-top: 70px;
+
+}
+.pic1{
+margin-left: 30px;
+margin-bottom: 20px;
+
+}
+
+.macbook{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 15px;
+  margin-right: -120px;
+  margin-left: 120px;
+
+}
